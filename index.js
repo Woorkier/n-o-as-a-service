@@ -22,12 +22,12 @@ const limiter = rateLimit({
 app.use(limiter);
 
 // Random rejection reason endpoint
-app.get('/no', (req, res) => {
+app.get('/nao', (req, res) => {
   const reason = reasons[Math.floor(Math.random() * reasons.length)];
   res.json({ reason });
 });
 
 // Start server
 app.listen(PORT, () => {
-  console.log(`No-as-a-Service is running on port ${PORT}`);
+  console.log(`Não-as-a-Service is running on port ${PORT}`);
 });
