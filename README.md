@@ -1,93 +1,82 @@
-# ❌ No-as-a-Service
+# ❌ Não-as-a-Service
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/hotheadhacker/no-as-a-service/main/assets/imgs/naas-with-no-logo-bunny.png" width="800" alt="No-as-a-Service Banner" width="70%"/>
 </p>
 
-
-Ever needed a graceful way to say “no”?  
-This tiny API returns random, generic, creative, and sometimes hilarious rejection reasons — perfectly suited for any scenario: personal, professional, student life, dev life, or just because.
-
-Built for humans, excuses, and humor.
-
-<!-- GitAds Sponsorship Badge -->
 <p align="center">
-  <a href="https://docs.gitads.dev/">
-    <img src="https://gitads.dev/assets/images/sponsor/camos/camo-3.png" alt="Sponsored by GitAds" />
-  </a>
+  Este projeto é um fork do projeto original traduzido para o português (BR).<br>
 </p>
 
-<p align="center">
-  This project is <strong>sponsored by <a href="https://docs.gitads.dev/docs/getting-started/publishers">GitAds</a></strong>.<br>
-  You can get your GitHub repository sponsored too — <a href="https://docs.gitads.dev/docs/getting-started/publishers">create your account now</a>.
-</p>
+Já precisou de uma maneira elegante de dizer "não"?
+Esta pequena API retorna motivos de rejeição aleatórios, genéricos, criativos e, às vezes, hilários — perfeitamente adequados para qualquer cenário: pessoal, profissional, vida estudantil, vida de desenvolvedor ou simplesmente por diversão.
 
----
+Criada para humanos, desculpas e humor.
 
-## 🚀 API Usage
+## 🚀 Uso da API
 
-**Base URL**
+**URL Base**
 ```
 https://naas.isalman.dev/no
 ```
 
-**Method:** `GET`  
-**Rate Limit:** `120 requests per minute per IP`
+**Método:** `GET`  
+**Limite:** `120 requisições por minuto por IP`
 
-### 🔄 Example Request
+### 🔄 Exemplo de request
 ```http
 GET /no
 ```
 
-### ✅ Example Response
+### ✅ Exemplo de Resposta
 ```json
 {
-  "reason": "This feels like something Future Me would yell at Present Me for agreeing to."
+  "razão": "Atualmente estou ocupado fingindo ser produtivo pela próxima década."
 }
 ```
 
-Use it in apps, bots, landing pages, Slack integrations, rejection letters, or wherever you need a polite (or witty) no.
+Use-o em aplicativos, bots, landing pages, integrações do Slack, cartas de rejeição ou onde quer que você precise de um não educado (ou espirituoso).
 
 ---
 
 ## 🛠️ Self-Hosting
 
-Want to run it yourself? It’s lightweight and simple.
+Quer fazer você mesmo? É leve e simples.
 
-### 1. Clone this repository
+### 1. Clone o repositório
 ```bash
-git clone https://github.com/hotheadhacker/no-as-a-service.git
-cd no-as-a-service
+git clone https://github.com/Woorkier/n-o-as-a-service.git
+cd n-o-as-a-service
 ```
 
-### 2. Install dependencies
+### 2. Instale as dependências
 ```bash
 npm install
 ```
 
-### 3. Start the server
+### 3. Inicie o servidor
 ```bash
 npm start
 ```
 
-The API will be live at:
+A API estará disponível em:
 ```
 http://localhost:3000/no
 ```
 
-You can also change the port using an environment variable:
+Você também pode trocar a porta ajustando a variável de ambiente:
 ```bash
 PORT=5000 npm start
 ```
 
 ---
 
-## 📁 Project Structure
+## 📁 Estrutura do Projeto
 
 ```
 no-as-service/
 ├── index.js            # Express API
-├── reasons.json        # 1000+ universal rejection reasons
+├── reasons.json        # 1000+ razões universais para dizer não
 ├── package.json
 ├── .devcontainer.json  # VS Code / Github devcontainer setup
 └── README.md
@@ -97,13 +86,13 @@ no-as-service/
 
 ## 📦 package.json
 
-For reference, here’s the package config:
+Para referência, aqui está a config do pacote (package.json):
 
 ```json
 {
   "name": "no-as-service",
   "version": "1.0.0",
-  "description": "A lightweight API that returns random rejection or no reasons.",
+  "description": "Uma API leve que retorna rejeições aleatórias ou sem motivos.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -121,36 +110,19 @@ For reference, here’s the package config:
 
 ## ⚓ Devcontainer
 
-If you open this repo in Github Codespaces, it will automatically use `.devcontainer.json` to set up your environment.  If you open it in VSCode, it will ask you if you want to reopen it in a container.
-
----
-## Projects Using No-as-a-Service
-
-Here are some projects and websites that creatively integrate [no-as-a-service](https://naas.isalman.dev/no) to deliver humorous or programmatic "no" responses:
-
-1. **[no-as-a-service-rust](https://github.com/ZAZPRO/no-as-a-service-rust)**  
-   Rust implementation of this project.
-
-2. **[CSG Admins](https://csg-admins.de)**  
-   A system administration and gaming service hub using no-as-a-service to provide playful negative responses across some admin panels and commands.
-
-3. **[FunnyAnswers - /no endpoint](https://www.funnyanswers.lol/no)**  
-   A humor-focused API playground that includes a mirror or wrapper for no-as-a-service, perfect for developers exploring fun HTTP-based responses.
-
-4. **[Your Project Here?](https://github.com/YOUR_REPO)**  
-   If you're using no-as-a-service in your project, open a pull request to be featured here!
+Se você abrir este repositório no Github Codespaces, ele usará automaticamente `.devcontainer.json` para configurar seu ambiente. Se você abri-lo no VSCode, ele perguntará se você deseja reabri-lo em um contêiner.
 
 ---
 
-> Want to use no-as-a-service in your own project? Check out the usage section in this README and start returning **"no"** like a pro.
+> Quer usar o no-as-a-service no seu próprio projeto? Confira a seção de uso neste README e comece a retornar **"no"** como um profissional.
 ---
 
-## 👤 Author
+## 👤 Autor
 
-Created with creative stubbornness by [hotheadhacker](https://github.com/hotheadhacker)
+Criado com teimosia criativa por [hotheadhacker](https://github.com/hotheadhacker)
 
 ---
 
-## 📄 License
+## 📄 Licença
 
-MIT — do whatever, just don’t say yes when you should say no.
+MIT — faça o que quiser, só não diga sim quando deveria dizer não.
